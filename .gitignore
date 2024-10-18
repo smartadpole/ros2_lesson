@@ -258,4 +258,5 @@ fabric.properties
 weights*
 tensorrt*
 install/
+.idea/
 log/
