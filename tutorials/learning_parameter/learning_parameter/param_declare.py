@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 """
-@作者: 古月居(www.guyuehome.com)
 @说明: ROS2参数示例-创建、读取、修改参数
 """
 

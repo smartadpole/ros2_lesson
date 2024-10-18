@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 """
-@作者: 古月居(www.guyuehome.com)
 @说明: ROS2接口示例-订阅目标位置
 """
 

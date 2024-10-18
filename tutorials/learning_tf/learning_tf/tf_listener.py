@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 """
-@作者: 古月居(www.guyuehome.com)
 @说明: ROS2 TF示例-监听某两个坐标系之间的变换
 """
 

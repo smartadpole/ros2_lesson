@@ -1,5 +1,4 @@
 /***
-@作者: 古月居(www.guyuehome.com)
 @说明: ROS2话题示例-订阅“Hello World”话题消息
 ***/
 

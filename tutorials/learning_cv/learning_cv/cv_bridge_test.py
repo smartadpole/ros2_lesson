@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 """
-@作者: 古月居(www.guyuehome.com)
 @说明: cvbridge使用示例
 """
 
