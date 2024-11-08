@@ -34,6 +34,11 @@ class TurtleFollowing(Node):
 
         self.timer = self.create_timer(1.0, self.on_timer)         # 创建一个固定周期的定时器，控制跟随海龟的运动
 
+        # 等待 spawn 服务准备好
+        while not self.spawner.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('Waiting for spawn service to become available...')
+
+
     def on_timer(self):
         from_frame_rel = self.source_frame                         # 源坐标系
         to_frame_rel   = 'turtle2'                                 # 目标坐标系
@@ -52,7 +57,7 @@ class TurtleFollowing(Node):
                     return
 
                 msg = Twist()                                      # 创建速度控制消息
-                scale_rotation_rate = 1.0                          # 根据海龟角度，计算角速度
+                scale_rotation_rate = 1.0                         # 根据海龟角度，计算角速度
                 msg.angular.z = scale_rotation_rate * math.atan2(
                     trans.transform.translation.y,
                     trans.transform.translation.x)
